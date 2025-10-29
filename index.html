@@ -1,206 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Focus News — Breakthrough in Memory and Brain Health</title>
-  <style>
-    :root {
-      --primary: #c62828;
-      --text: #1a1a1a;
-      --gray: #6b7280;
-      --bg: #f9fafb;
-      --max-width: 1100px;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-    }
-
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 14px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .logo {
-      font-weight: 800;
-      font-size: 1.3rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      max-width: var(--max-width);
-      margin: 30px auto;
-      gap: 25px;
-      padding: 0 20px;
-    }
-
-    article {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    article img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      color: #000;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: var(--gray);
-      font-size: 1.1rem;
-      margin-top: 0;
-      margin-bottom: 12px;
-    }
-
-    .meta {
-      font-size: 0.85rem;
-      color: #777;
-      margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 16px;
-      font-size: 1rem;
-    }
-
-    .cta {
-      display: block;
-      background: var(--primary);
-      color: #fff;
-      text-align: center;
-      padding: 14px 20px;
-      border-radius: 8px;
-      font-weight: 700;
-      text-decoration: none;
-      margin: 25px 0;
-      transition: background 0.2s ease;
-    }
-
-    .cta:hover {
-      background: #a4161a;
-    }
-
-    aside {
-      background: white;
-      padding: 18px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      height: fit-content;
-    }
-
-    aside h3 {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-    }
-
-    .related {
-      margin-bottom: 15px;
-    }
-
-    .related a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .related a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #888;
-      padding: 20px;
-    }
-
-    @media (max-width: 800px) {
-      main { grid-template-columns: 1fr; }
-      nav { display: none; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Focus News — NASA 10-Second Memory Trick</title>
+<style>
+  :root{
+    --primary:#c62828;
+    --text:#1a1a1a;
+    --gray:#6b7280;
+    --bg:#f9fafb;
+    --max-width:1100px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    color:var(--text);
+    background:var(--bg);
+  }
+  header{
+    background:var(--primary);
+    color:white;
+    padding:14px 0;
+  }
+  .nav-container{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .logo{font-weight:800;font-size:1.3rem;}
+  nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-size:0.9rem;
+    font-weight:600;
+  }
+  nav a:hover{text-decoration:underline;}
+  main{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    max-width:var(--max-width);
+    margin:30px auto;
+    gap:25px;
+    padding:0 20px;
+  }
+  article{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  }
+  article img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:18px;
+  }
+  h1{color:#000;font-size:2rem;margin-bottom:10px;}
+  .sub{font-size:1.1rem;color:var(--gray);margin-bottom:12px;}
+  .meta{font-size:0.85rem;color:#777;margin-bottom:20px;}
+  p{line-height:1.6;margin-bottom:16px;font-size:1rem;}
+  .cta{
+    display:block;
+    background:var(--primary);
+    color:#fff;
+    text-align:center;
+    padding:14px 20px;
+    border-radius:8px;
+    font-weight:700;
+    text-decoration:none;
+    margin:25px 0;
+    transition:background 0.2s ease;
+  }
+  .cta:hover{background:#a4161a;}
+  aside{
+    background:white;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    height:fit-content;
+  }
+  aside h3{font-size:1.1rem;margin-bottom:10px;}
+  .related{margin-bottom:15px;}
+  .related a{color:var(--primary);text-decoration:none;font-weight:600;}
+  .related a:hover{text-decoration:underline;}
+  footer{text-align:center;font-size:0.8rem;color:#888;padding:20px;}
+  @media(max-width:800px){main{grid-template-columns:1fr;}nav{display:none;}}
+</style>
 </head>
 <body>
+<header>
+  <div class="nav-container">
+    <div class="logo">World Focus News</div>
+    <nav>
+      <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">Home</a>
+      <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">Health</a>
+      <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">Science</a>
+      <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">Mind</a>
+    </nav>
+  </div>
+</header>
 
-  <header>
-    <div class="nav-container">
-      <div class="logo">World Focus News</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Health</a>
-        <a href="#">Science</a>
-        <a href="#">Mind</a>
-      </nav>
-    </div>
-  </header>
+<main>
+  <article>
+    <h1>BREAKING: NASA Scientists Expose a 10-Second Memory Trick Hidden for Decades</h1>
+    <img src="https://images.unsplash.com/photo-1598327101580-29081808ec45?q=80&w=1600&auto=format&fit=crop" alt="Older person thinking deeply">
+    <p>A shocking new discovery from NASA researchers reveals that memory loss has nothing to do with age, stress, or genetics — but with a silent breakdown happening inside your brain every single day.</p>
+    <p>During space missions, scientists noticed that some astronauts showed incredible mental clarity and stronger memory recall under extreme pressure. After months of investigation, they uncovered a simple 10-second neural activation ritual that reawakens dormant brain connections — boosting focus, alertness, and memory retention.</p>
+    <p>Pharmaceutical companies are allegedly trying to suppress this information, fearing billions in lost profits if the truth spreads. But before it disappears, this short presentation explains how anyone can apply this 10-second NASA discovery from home — safely and naturally.</p>
+    <p>⚠️ Warning: This video could be taken down at any moment. Watch it now before it’s gone for good.</p>
+    <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua" class="cta">👉 Click below to see how it works</a>
+  </article>
 
-  <main>
-    <article>
-      <h1>URGENT: Scientists uncover a surprising method to boost memory naturally</h1>
-      <h2>New research suggests that short daily routines could help improve cognitive clarity.</h2>
-      <div class="meta">By Dr. Sunjay Gupta • October 29, 2025</div>
-      <img src="https://images.unsplash.com/photo-1598327101580-29081808ec45?q=80&w=1600&auto=format&fit=crop" alt="Elderly person thinking deeply">
-      
-      <p>For years, memory loss has been accepted as a normal part of aging — but researchers now believe it might not be inevitable. A team of scientists studying astronauts’ brain responses discovered patterns that could hold the key to keeping our minds sharp as we grow older.</p>
+  <aside>
+    <h3>Trending Articles</h3>
+    <div class="related"><a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">5 Daily Habits That Support Brain Health</a></div>
+    <div class="related"><a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">What Scientists Learned from Astronaut Memory Studies</a></div>
+    <div class="related"><a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=eua">Foods That Help Cognitive Performance</a></div>
+  </aside>
+</main>
 
-      <p>The findings point to a short, easy-to-practice daily exercise that supports focus and recall. While still being studied, participants reported feeling clearer and more alert within weeks of starting the practice.</p>
-
-      <p>Experts say the results are encouraging, especially since the approach doesn’t require medication or expensive therapies. It focuses on natural, cognitive stimulation that anyone can do from home.</p>
-
-      <a href="#" class="cta">Learn More</a>
-
-      <p><strong>Disclaimer:</strong> This article is for informational purposes only. It does not offer medical advice, diagnosis, or treatment.</p>
-    </article>
-
-    <aside>
-      <h3>Trending Articles</h3>
-      <div class="related"><a href="#">5 daily habits that support brain health</a></div>
-      <div class="related"><a href="#">What scientists learned from astronaut memory studies</a></div>
-      <div class="related"><a href="#">Foods that help cognitive performance</a></div>
-    </aside>
-  </main>
-
-  <footer>
-    © 2025 World Focus News — All rights reserved.
-  </footer>
-
+<footer>
+  © 2025 World Focus News — All rights reserved.
+</footer>
 </body>
 </html>
