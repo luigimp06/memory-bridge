@@ -1,202 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>URGENT: Scientists uncover a natural cure for Memory Loss</title>
-<meta name="description" content="Short daily method inspired by astronaut research — learn the 10-second routine that thousands are trying.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Focus News — Breakthrough in Memory and Brain Health</title>
+  <style>
+    :root {
+      --primary: #c62828;
+      --text: #1a1a1a;
+      --gray: #6b7280;
+      --bg: #f9fafb;
+      --max-width: 1100px;
+    }
 
-<style>
-  :root{
-    --red:#e53935;
-    --dark:#0b0b0b;
-    --muted:#6b7280;
-    --maxw:1100px;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background:#f3f4f6;
-    color:var(--dark);
-    -webkit-font-smoothing:antialiased;
-  }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
 
-  /* Container */
-  .container{max-width:var(--maxw);margin:18px auto;padding:0 16px;}
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 14px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-  /* Top red bar */
-  .topbar{
-    background:var(--red);
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:12px 16px;
-    border-radius:8px 8px 0 0;
-  }
-  .brand{font-weight:900;font-size:20px;letter-spacing:0.2px}
-  .menu{display:flex;gap:14px;font-weight:700;font-size:13px}
-  .menu a{color:#fff;opacity:0.95}
-  .menu a:hover{opacity:1;color:#fff;text-decoration:underline}
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
-  /* Main layout (article + sidebar) */
-  .main{display:grid;grid-template-columns:1fr 320px;gap:18px;background:#fff;padding:26px;border-radius:0 0 8px 8px;box-shadow:0 10px 30px rgba(12,20,40,0.06)}
-  @media(max-width:1024px){.main{grid-template-columns:1fr}}
+    .logo {
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
 
-  /* Article */
-  .article h1{font-size:34px;line-height:1.03;margin:0 0 8px;font-weight:900;color:#000}
-  .sub{font-size:16px;color:var(--muted);margin-bottom:8px}
-  .byline{font-size:13px;color:#70747b;margin-bottom:18px}
-  .hero{width:100%;border-radius:8px;overflow:hidden;margin-bottom:18px}
-  .hero img{width:100%;height:auto;display:block}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
 
-  .content p{font-size:16px;color:#0f1724;margin-bottom:16px;line-height:1.6}
-  .lead-strong{font-weight:800;color:#000}
-  .review{background:#fff6f6;border-left:4px solid var(--red);padding:14px;border-radius:6px;margin:18px 0}
-  .review p{margin:0;font-weight:700}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-  /* CTA block */
-  .cta-wrap{text-align:center;margin:20px 0}
-  .cta{
-    display:inline-block;
-    background:var(--red);
-    color:#fff;
-    padding:16px 22px;
-    font-weight:900;
-    font-size:18px;
-    border-radius:8px;
-    text-decoration:none;
-    border:0;
-    cursor:pointer;
-  }
-  .cta:hover{background:#b71c1c}
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      max-width: var(--max-width);
+      margin: 30px auto;
+      gap: 25px;
+      padding: 0 20px;
+    }
 
-  /* Counter small */
-  .counter{margin-top:10px;font-size:13px;color:var(--muted)}
+    article {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
 
-  /* Sidebar */
-  .sidebar{padding-left:4px}
-  .card{background:#fafafa;padding:14px;border-radius:8px;margin-bottom:12px;border:1px solid #f0f2f4}
-  .card h4{margin:0 0 8px;font-size:15px}
-  .card p{margin:0;font-size:14px;color:#444}
+    article img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
 
-  /* Footer small */
-  .disclaimer{font-size:12px;color:#7b8087;text-align:center;margin-top:14px}
+    h1 {
+      color: #000;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
 
-  /* Responsive adjustments */
-  @media(max-width:720px){
-    .brand{font-size:18px}
-    .menu{display:none}
-    .article h1{font-size:26px}
-    .main{padding:18px}
-  }
-</style>
+    h2 {
+      color: var(--gray);
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .cta {
+      display: block;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 25px 0;
+      transition: background 0.2s ease;
+    }
+
+    .cta:hover {
+      background: #a4161a;
+    }
+
+    aside {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+
+    aside h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .related {
+      margin-bottom: 15px;
+    }
+
+    .related a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .related a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      padding: 20px;
+    }
+
+    @media (max-width: 800px) {
+      main { grid-template-columns: 1fr; }
+      nav { display: none; }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
 
-    <!-- top bar -->
-    <div class="topbar" role="banner">
-      <div class="brand">World Focus News</div>
-      <nav class="menu" aria-label="Main">
+  <header>
+    <div class="nav-container">
+      <div class="logo">World Focus News</div>
+      <nav>
         <a href="#">Home</a>
         <a href="#">Health</a>
         <a href="#">Science</a>
-        <a href="#">Lifestyle</a>
+        <a href="#">Mind</a>
       </nav>
     </div>
+  </header>
 
-    <!-- main content area -->
-    <div class="main" role="main">
+  <main>
+    <article>
+      <h1>URGENT: Scientists uncover a surprising method to boost memory naturally</h1>
+      <h2>New research suggests that short daily routines could help improve cognitive clarity.</h2>
+      <div class="meta">By Dr. Sunjay Gupta • October 29, 2025</div>
+      <img src="https://images.unsplash.com/photo-1598327101580-29081808ec45?q=80&w=1600&auto=format&fit=crop" alt="Elderly person thinking deeply">
+      
+      <p>For years, memory loss has been accepted as a normal part of aging — but researchers now believe it might not be inevitable. A team of scientists studying astronauts’ brain responses discovered patterns that could hold the key to keeping our minds sharp as we grow older.</p>
 
-      <!-- ARTICLE (LEFT) -->
-      <article class="article" aria-labelledby="main-headline">
-        <h1 id="main-headline">URGENT: Scientists uncover a natural cure for Memory Loss that can be made at home</h1>
-        <div class="sub">Over 15,000 Americans have already reversed early cognitive decline for less than $45</div>
-        <div class="byline">By Dr. Sunjay Gupta — Oct 28, 2025</div>
+      <p>The findings point to a short, easy-to-practice daily exercise that supports focus and recall. While still being studied, participants reported feeling clearer and more alert within weeks of starting the practice.</p>
 
-        <div class="hero">
-          <!-- imagem exemplo; substitua pela que escolher -->
-          <img src="https://images.unsplash.com/photo-1598327101580-29081808ec45?q=80&w=1600&auto=format&fit=crop" alt="Older person worried about memory">
-        </div>
+      <p>Experts say the results are encouraging, especially since the approach doesn’t require medication or expensive therapies. It focuses on natural, cognitive stimulation that anyone can do from home.</p>
 
-        <div class="content">
-          <!-- AIDA em texto corrido, direto ao ponto -->
-          <p><span class="lead-strong">Attention:</span> If you or a loved one has been sliding into forgetfulness — names drifting away, appointments missed, words slipping — you’re not alone. Millions are silently losing small pieces of themselves each day.</p>
+      <a href="#" class="cta">Learn More</a>
 
-          <p><span class="lead-strong">Interest:</span> A surprising discovery inspired by astronaut research has led scientists to a short 10-second neurological routine. Researchers noticed that after certain space re-entry procedures, crew members experienced clearer recall. That observation sparked civilian trials — and the results shocked experts.</p>
+      <p><strong>Disclaimer:</strong> This article is for informational purposes only. It does not offer medical advice, diagnosis, or treatment.</p>
+    </article>
 
-          <p><span class="lead-strong">Desire:</span> Participants across multiple trials reported bigger, faster improvements than expected: better name recall, sharper focus, and fewer "blank" moments — often within days. No prescriptions. No costly clinics. Just a brief, repeatable ritual you can do at home.</p>
+    <aside>
+      <h3>Trending Articles</h3>
+      <div class="related"><a href="#">5 daily habits that support brain health</a></div>
+      <div class="related"><a href="#">What scientists learned from astronaut memory studies</a></div>
+      <div class="related"><a href="#">Foods that help cognitive performance</a></div>
+    </aside>
+  </main>
 
-          <p><span class="lead-strong">Action:</span> Watch the short demonstration now to see the exact method and how others applied it safely. The presentation is being shared for a limited time.</p>
-
-          <!-- prominent CTA -->
-          <div class="cta-wrap">
-            <a class="cta" href="{{VSL_LINK}}" id="primary-cta">▶ Watch The Full Demonstration Now</a>
-            <div class="counter" id="counter">You will be redirected in <strong id="sec">15</strong> seconds — or click the button to go now.</div>
-          </div>
-
-          <div class="review" aria-live="polite">
-            <p>“I stopped forgetting names and appointments within days,” says Maria, 58. “It felt like someone flipped a switch in my head — I have my life back.”</p>
-          </div>
-
-          <p style="font-size:14px;color:#4b5563">Note: This page provides informational content. It is not medical advice. Always consult a healthcare professional for medical concerns.</p>
-        </div>
-      </article>
-
-      <!-- SIDEBAR (RIGHT) -->
-      <aside class="sidebar" aria-labelledby="trending">
-        <div class="card" id="trending">
-          <h4>Trending</h4>
-          <p>How astronauts keep their minds sharp on long missions</p>
-        </div>
-
-        <div class="card">
-          <h4>Editor’s Pick</h4>
-          <p>The morning routine top neuroscientists recommend</p>
-        </div>
-
-        <div class="card">
-          <h4>More Stories</h4>
-          <p>5 small habits that protect memory</p>
-        </div>
-      </aside>
-    </div>
-
-    <div class="disclaimer">World Focus News • Not affiliated with NASA or any news network. For informational purposes only.</div>
-  </div>
-
-  <!-- SCRIPT: contador visível e CTA abre na mesma aba -->
-  <script>
-    (function(){
-      // seconds for visible countdown
-      var secs = 15;
-      var secEl = document.getElementById('sec');
-      var vsl = "{{VSL_LINK}}"; // replace with your actual URL or let the CTA href be set server-side
-
-      // update visible counter
-      var interval = setInterval(function(){
-        secs--;
-        if(secEl) secEl.textContent = String(secs);
-        if(secs <= 0){
-          clearInterval(interval);
-          // NOTE: automatic redirect is commented out by default.
-          // If you want to enable immediate redirect after countdown, uncomment the line below:
-          // window.location.href = vsl;
-        }
-      },1000);
-
-      // ensure CTA opens in same tab
-      var cta = document.getElementById('primary-cta');
-      if(cta){
-        cta.addEventListener('click', function(e){
-          // allow navigation in same tab (default)
-          // nothing else needed
-        });
-      }
-    })();
-  </script>
+  <footer>
+    © 2025 World Focus News — All rights reserved.
+  </footer>
 
 </body>
 </html>
