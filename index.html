@@ -18,6 +18,7 @@
     font-family:'Helvetica Neue', Arial, sans-serif;
     color:var(--text);
     background:var(--bg);
+    transition:opacity 1s ease;
   }
   header{
     background:var(--primary);
@@ -131,9 +132,9 @@
   <aside>
     <div style="margin-bottom:20px; text-align:center;">
       <p style="font-size:0.9rem; color:#555; margin-bottom:8px;">As Seen On</p>
-      <img src="cnnlogo.png" alt="CNN" style="height:20px; margin:0 5px;">
-      <img src="fox-news7378.jpg" alt="Fox News" style="height:20px; margin:0 5px;">
-      <img src="bbc.png" alt="BBC" style="height:20px; margin:0 5px;">
+      <img src="cnnlogo.png" alt="CNN" style="height:30px; margin:0 6px;">
+      <img src="fox-news7378.jpg" alt="Fox News" style="height:30px; margin:0 6px;">
+      <img src="bbc.png" alt="BBC" style="height:30px; margin:0 6px;">
     </div>
 
     <div style="background:#fff3cd; border-left:4px solid #ffc107; padding:10px; border-radius:8px; margin-bottom:20px;">
@@ -151,15 +152,15 @@
     <div style="margin-bottom:20px;">
       <h3 style="font-size:1rem; margin-bottom:8px;">Editor’s Pick</h3>
       <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=aust" style="display:flex; align-items:center; text-decoration:none; color:#000;">
-        <img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?q=80&w=400" alt="Brain habit" style="width:70px; height:70px; border-radius:6px; margin-right:10px;">
+        <img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?q=80&w=400" alt="Brain habit" style="width:80px; height:80px; border-radius:6px; margin-right:10px;">
         <span style="font-size:0.9rem;">“The Morning Habit That Keeps Your Brain 10 Years Younger”</span>
       </a>
     </div>
 
     <h3>Trending Articles</h3>
-    <div class="related"><a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=aust">5 Daily Habits That Support Brain Health</a></div>
-    <div class="related"><a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=aust">What Scientists Learned from Astronaut Memory Studies</a></div>
-    <div class="related"><a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=aust">Foods That Help Cognitive Performance</a></div>
+    <div class="related"><a href="#">5 Daily Habits That Support Brain Health</a></div>
+    <div class="related"><a href="#">What Scientists Learned from Astronaut Memory Studies</a></div>
+    <div class="related"><a href="#">Foods That Help Cognitive Performance</a></div>
 
     <a href="https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=aust" 
        style="display:block; background:#c62828; color:white; text-align:center; padding:10px 0; border-radius:6px; font-weight:600; text-decoration:none; margin-top:15px;">
@@ -171,5 +172,24 @@
 <footer>
   © 2025 World Focus News — All rights reserved.
 </footer>
+
+<script>
+  // Detecta quando o usuário chega na metade da página
+  let triggered = false;
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY + window.innerHeight;
+    const halfway = document.body.scrollHeight / 2;
+
+    if (!triggered && scrollPosition >= halfway) {
+      triggered = true;
+      setTimeout(() => {
+        document.body.style.opacity = "0";
+        setTimeout(() => {
+          window.location.href = "https://hop.clickbank.net/?affiliate=luimp&vendor=brainsongx&pid=vsla2&tid=aust";
+        }, 1000); // 1s de fade antes do redirect
+      }, 10000); // 10 segundos após rolar metade
+    }
+  });
+</script>
 </body>
 </html>
