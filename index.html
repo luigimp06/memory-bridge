@@ -96,6 +96,34 @@
   .related a:hover{text-decoration:underline;}
   footer{text-align:center;font-size:0.8rem;color:#888;padding:20px;}
   @media(max-width:800px){main{grid-template-columns:1fr;}nav{display:none;}}
+  /* Ajustes para mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.4rem; /* diminui o título */
+    line-height: 1.3;
+    text-align: center; /* centraliza para ficar mais legível */
+  }
+
+  article a img {
+    width: 98%; /* aumenta levemente a imagem */
+    max-width: none;
+  }
+
+  .cta {
+    width: 100%; /* botão ocupa mais espaço */
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  article {
+    padding: 18px; /* menos espaçamento interno */
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
+
 </style>
 </head>
 <body>
